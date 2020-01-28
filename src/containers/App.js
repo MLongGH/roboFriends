@@ -27,25 +27,10 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 class App extends Component {
-/*  constructor() {
-    super();
-    this.state = {
-      robots: []
-    }
-    // this.onSearchChange = this.onSearchChange.bind(this);
-  }*/
 
   componentDidMount() {
     this.props.onRequestRobots();
   }
-
-  /*  onSearchChange = (event) => {
-      this.setState({searchfield: event.target.value});
-    };*/
-
-  /* onSearchChange(event) {
-     this.setState({searchfield: event.target.value});
-   };*/
 
   render() {
     const {searchField, onSearchChange, robots, isPending} = this.props;
