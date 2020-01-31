@@ -4,7 +4,7 @@ import MainPage from '../components/MainPage';
 
 import './App.css';
 
-import {setSearchField, requestRobots} from "../action";
+import {setSearchField, requestRobots} from "../actions";
 
 const mapStateToProps = state => {
   return {
