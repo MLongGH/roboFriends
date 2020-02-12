@@ -12,7 +12,6 @@ jobs:
       - run: echo "npm installing"
       - run: npm install
       - run: CI=true npm run build
-
   test:
     docker:
       - image: circleci/node:8.9
@@ -27,7 +26,6 @@ jobs:
     steps:
       - checkout
       - run: echo "hello"
-
 workflows:
   version: 2
   build_test_and_lint:
