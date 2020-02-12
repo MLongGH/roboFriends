@@ -14,7 +14,7 @@ jobs:
       - run: npm run build
   test:
     docker:
-      - image: circleci/stretch
+      - image: circleci/node:stretch
     steps:
       - checkout
       - run: echo "testing"
@@ -22,7 +22,7 @@ jobs:
       - run: npm test
   hithere:
     docker:
-      - image: circleci/stretch
+      - image: circleci/node:stretch
     steps:
       - checkout
       - run: echo "hello"
